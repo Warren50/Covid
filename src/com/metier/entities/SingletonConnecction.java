@@ -10,7 +10,7 @@ public class SingletonConnecction {
 		static{
 			try {
 				Class.forName("com.mysql.jdbc.Driver");
-				connexion=DriverManager.getConnection("jdbc:mysql://localhost:3306/gestion_produit2","root","");
+				connexion=DriverManager.getConnection("jdbc:mysql://localhost:3306/stop_codiv","root","");
 				//System.out.println("Connexion effective !");
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
