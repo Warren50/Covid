@@ -7,12 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	il s'agira ici de notre premiere page d'acceuil
-	
-	<form action="add.php" method="post">
-		<input type="text" name="name"/>
-		<input type="submit" value="affichage">
-	</form>
-
+	Covid-19
 </body>
 </html>
