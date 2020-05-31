@@ -18,6 +18,15 @@ public class Symtome {
 		super();
 		this.nom = nom;
 	}
+	
+	
+	public Symtome(String nom, String description) {
+		super();
+		this.nom = nom;
+		this.description = description;
+	}
+
+	/*Getters et setters*/
 	public int getId() {
 		return id;
 	}
