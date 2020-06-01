@@ -1,7 +1,8 @@
 package com.metier.entities;
 
-import java.util.List;
+//import java.util.List;
 
+import com.metier.implementation.AgentImpl;
 import com.metier.implementation.SymptomeImpl;
 
 public class Test {
@@ -9,6 +10,12 @@ public class Test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		/*Test agent*/
+		Agent agent =  new Agent(673209704,"Le deuxieme agent");
+		agent.setUser_id(1);
+		AgentImpl agentimpl = new AgentImpl();
+		agent.setId(1);
+		agentimpl.delete_agent(agent);
 		/*Test de l'ajout d'un symptome*/
 		
 		Symtome symptome =  new Symtome("toux");
@@ -36,13 +43,14 @@ public class Test {
 		
 		//recupération de tous les symptomes das une liste
 		
-		List<Symtome> listSymptome = symptomeimpl.list_symptome();
+		//List<Symtome> listSymptome = symptomeimpl.list_symptome();
 		
 		// on arcourt chaque symptome de la liste et on affiche
-		
+		/*
 		for(Symtome symptom: listSymptome){
 			System.out.println("le nom est:"+" "+symptom.getNom()+" "+"et la description est:"+symptom.getDescription());
 		}
+		*/
 	}
 
 }
