@@ -28,13 +28,14 @@ public class Test {
         
       
        //create et receiver
-       Receiver rec =new Receiver(4,2,3,4872,4597);
-       t.create_Receiver(rec);
+      // Receiver rec =new Receiver(4,2,3,4872,4597);
+      // t.create_Receiver(rec);
        for(Receiver r:t.liste_Receiver())
        {
     	   System.out.println(""+r.getCard_id()+" " + r.getCode()+" "+r.getId());
        }
        
+       t.delete_Receiver(26);
    
 	}
 }

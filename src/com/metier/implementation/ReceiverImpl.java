@@ -52,12 +52,12 @@ public class ReceiverImpl implements ReceiverInterface {
 	}
 
 	@Override
-	public void delete_Receiver(Receiver rec) {
+	public void delete_Receiver(int rec_id) {
 		// TODO Auto-generated method stub
 		Connection conn=SingletonConnecction.getConnexion();
 		try {
 			PreparedStatement ps =conn.prepareStatement("delete from receivers where id=?");
-			ps.setInt(1, rec.getId());
+			ps.setInt(1, rec_id);
 			ps.executeUpdate();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
